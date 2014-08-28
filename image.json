@@ -1,0 +1,10 @@
+{
+  "name": "node-example",
+  "version": "0.1.0",
+  "description": "A basic node.js express app with Redis.",
+  "author": "Kitematic",
+  "logo": "logo.png",
+  "app": {
+    "webPort": 3000
+  }
+}

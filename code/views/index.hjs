@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Todo List</h1>
+    <form action="/save" method="POST">
+      <p>
+        <label>New Item</label>
+        <input type="text" name="todo-text">
+      </p>
+      <p>
+        <input type="submit" value="Add">
+    </form>
+    <ul>
+      {{#todos}}
+        <li>{{text}}</li>
+      {{/todos}}
+    </ul>
+  </body>
+</html>
